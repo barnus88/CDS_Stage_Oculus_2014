@@ -32,7 +32,6 @@
 #include "Camera.h"
 #include "Parser.h"
 
-#include "Oculus.h"
 
 // Classe
 

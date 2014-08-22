@@ -14,16 +14,13 @@ OVR_SDK = /home/gaultier/OculusSDK0.3.2/LibOVR
 
 all: target
 
-target: main.o Oculus.o Star.o Parser.o SceneOpenGL.o Shader.o Cube.o Crystal.o Input.o Texture.o Camera.o
+target: main.o Star.o Parser.o SceneOpenGL.o Shader.o Cube.o Crystal.o Input.o Texture.o Camera.o
 	$(CXX) -o $(TARGET) $^ $(LIBS) $(LFLAGS) $(INCLUDE)
 
 main.o: main.cpp
 	$(CXX) -c $^ $(CFLAGS) $(INCLUDE)
 
 Star.o: Star.cpp
-	$(CXX) -c $^ $(CFLAGS) $(INCLUDE)
-
-Oculus.o: Oculus.cpp
 	$(CXX) -c $^ $(CFLAGS) $(INCLUDE)
 
 Parser.o: Parser.cpp

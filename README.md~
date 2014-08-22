@@ -1,0 +1,21 @@
+SDL2_OpenGL3.3_Sample
+=====================
+
+SDL2_OpenGL3.3_Sample
+
+
+##Installation
+
+Linux development version (not tested on other plateforms but should work with minor fixes)
+
+- Install Oculus SDK 0.3.2 and copy the `libovr.a` to `/usr/local/lib`
+- Update your graphic card drivers (might need the proprietary drivers to work with the Oculus SDK), OpenGL 3.3
+- Install SDL 2
+- Make sure you have a valid C++ runtime (`libstdc++`) and a valid C++11 compiler (typically clang++/g++) (although C++11 features could be removed easily)
+
+
+#Use
+
+Type `make` and then `./main`.
+
+There could be some warnings related to the Oculus SDK.
